@@ -20,6 +20,9 @@ app.listen(port, () => {
   logger.log('info', '[EXPRESS] - listening port: %d', port);
 });
 
+app.use('/creatures', require('./controllers/creatures'));
+app.use('/weapons', require('./controllers/weapons'));
+// get '*' MUST be the last route
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../static/index.html'));
 });

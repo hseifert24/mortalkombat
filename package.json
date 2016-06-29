@@ -1,5 +1,5 @@
 {
-  "name": "mortal kombat",
+  "name": "mortalkombat",
   "version": "1.0.3",
   "scripts": {
     "dev": "DB=kombatdb LEVEL=silly PORT=3333 nodemon dst/server.js"
