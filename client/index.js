@@ -1,6 +1,7 @@
 import App from './components/App';
 import WeaponCreator from './components/WeaponCreator';
 import CreatureCreator from './components/CreatureCreator';
+import Game from './components/Game';
 import Home from './components/Home';
 import React from 'react';
 import { render } from 'react-dom';
@@ -14,6 +15,7 @@ render(
       <IndexRoute component={Home} />
       <Route path="addWeapon" component={WeaponCreator} />
       <Route path="addCreature" component={CreatureCreator} />
+      <Route path="playGame" component={Game} />
     </Route>
   </Router>
   , document.getElementById('root'));

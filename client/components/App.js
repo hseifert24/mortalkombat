@@ -14,6 +14,7 @@ export default class App extends React.Component {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/addWeapon">Create a Weapon</Link></li>
               <li><Link to="/addCreature">Create a Creature</Link></li>
+              <li><Link to="/playGame">Play Game</Link></li>
             </ul>
           </div>
         </nav>

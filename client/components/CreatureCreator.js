@@ -12,14 +12,12 @@ class CreatureCreator extends React.Component {
     console.log('Called addWeapon');
     console.log('refs:', this.refs);
     const name = this.refs.CreatureName.value;
-    const health = this.refs.CreatureHealth.value;
     const image = this.refs.CreatureImage.value;
-    const body = JSON.stringify({ name, health, image });
+    const body = JSON.stringify({ name, image });
 
     fetch('//localhost:3333/creatures', { method: 'post', body, headers: { 'Content-Type': 'application/json' } })
     .then(() => {
       this.refs.CreatureName.value = '';
-      this.refs.CreatureHealth.value = '';
       this.refs.CreatureImage.value = '';
     });
   }
@@ -30,10 +28,6 @@ class CreatureCreator extends React.Component {
         <div>
           <label>Name:</label>
           <input ref="CreatureName" type="text" />
-        </div>
-        <div>
-          <label>Health:</label>
-          <input ref="CreatureHealth" type="text" />
         </div>
         <div>
           <label>Image:</label>

@@ -1,0 +1,8 @@
+.creatureImage, .weaponImage {
+  width: 100px;
+}
+.combatant {
+  float: left;
+  border: thin black solid;
+  padding: 10px;
+}
